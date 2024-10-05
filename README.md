@@ -29,7 +29,7 @@ Finally streamlit is used to obtain user query and display all results.
 2. Install qdrant container (ensure you have docker installed first) and ensure that the container is up and running.
    please refer: https://qdrant.tech/documentation/guides/installation/ for installation instructions
 3. Install all the libraries mentioned in requirements.txt.
-   <pre>pip install requirements.txt
+   <pre>pip install -r requirements.txt
 4. Modify data/config.yaml with correct directory paths and add the right podcast uri in it.
 5. On terminal export your SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET.
    <pre> export SPOTIPY_CLIENT_ID="your spotify client id"
