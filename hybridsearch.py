@@ -29,7 +29,7 @@ class RunStreamlit:
         Finally it sorts them based on a re-ranker in order to get hybrid search result.
         """
         top_sem_hits = []
-        logger.info("Candidates will be produced via KNN")
+        logger.info("Candidates will be produced via ANN")
         semantic_results = self.qdrant_obj.search_collection(self.semanticsearch.table_name, query_str)
         for i, hit in enumerate(semantic_results):
             result_dict = {}

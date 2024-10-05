@@ -18,7 +18,7 @@ Finally streamlit is used to obtain user query and display all results.
 5. These are then stored in Qdrant as semantic_chunks collection.
 6. These semantic chunks are also stored in sqlite3 db in order to perform keyword search.
 7. Now on streamlit, the user can enter their query.
-8. This query is then embedded and matching candidates are fetched via KNN in Qdrant and BM25s in keyword search.
+8. This query is then embedded and matching candidates are fetched via ANN in Qdrant and BM25s in keyword search.
 9. These are then re-ranked by using user query and top candidates from both semantic and keyword search.
 10. Results are then shown to the user in streamlit ui. These results are divided into 3 seactions. Semantic Search, Keyword Search and Re-ranked results.
 
