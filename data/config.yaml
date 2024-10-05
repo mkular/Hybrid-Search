@@ -1,0 +1,22 @@
+###GLOBAL Variables###
+####SPOTIFY#####
+EPISODE_URI: "Enter Spotify podcast uri here!!!"
+
+###DIR or FILE paths###
+BASE_DIR: "hybrid_search/"
+DATA_DIR: "hybrid_search/data/"
+CSV_FILE_NAME: "episodes.csv"
+
+###Embedding model###
+MODEL: 'all-MiniLM-L6-v2'
+CROSSENCODER_MODEL: 'cross-encoder/ms-marco-MiniLM-L-6-v2'
+semantic_top_k: 5
+keyword_top_k: 5
+
+###Sqlite or Qdrant database paths###
+db_name: 'ss.db'
+db_path: "hybrid_search/data/ss.db"
+
+###Qdrant db params###
+qdrant_path: "hybrid_search/data"
+#########################
